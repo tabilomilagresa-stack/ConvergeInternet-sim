@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NetSure Account Verification</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="login-page">
+
+
+    <!-- ======================================
+         TOP HEADER
+         ====================================== -->
+
+    <header class="login-header">
+
+        <div class="login-logo">
+
+            <strong>
+                CyberFastLink
+            </strong>
+
+            <span>
+                CONVERGE INTERNET
+            </span>
+
+        </div>
+
+
+        <a
+            href="index.html"
+            class="back-home-link"
+        >
+            ← Back to Home
+        </a>
+
+    </header>
+
+
+
+    <!-- ======================================
+         MAIN LOGIN AREA
+         ====================================== -->
+
+    <main class="login-main">
+
+
+        <!-- LEFT INFORMATION -->
+
+        <section class="login-intro">
+
+            <div class="login-badge">
+                FIBER INTERNET
+            </div>
+
+
+            <h1>
+                Get connected.
+                <br>
+                Stay connected.
+            </h1>
+
+
+            <p>
+                Access your available internet offers
+                through this cybersecurity awareness
+                simulation.
+            </p>
+
+
+            <!-- FEATURES -->
+
+            <div class="login-features">
+
+                <div class="login-feature">
+
+                    <div class="feature-icon">
+                        ⚡
+                    </div>
+
+                    <div>
+                        <strong>
+                            Fast Fiber
+                        </strong>
+
+                        <span>
+                            High-speed internet connection
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="login-feature">
+
+                    <div class="feature-icon">
+                        📶
+                    </div>
+
+                    <div>
+                        <strong>
+                            Reliable Connection
+                        </strong>
+
+                        <span>
+                            Stay connected across your home
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="login-feature">
+
+                    <div class="feature-icon">
+                        🔒
+                    </div>
+
+                    <div>
+                        <strong>
+                            Account Verification
+                        </strong>
+
+                        <span>
+                            Continue to the simulation
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             LOGIN CARD
+             ====================================== -->
+
+        <section class="login-card">
+
+
+            <div class="login-card-icon">
+                🔐
+            </div>
+
+
+            <p class="login-card-label">
+                ConvergeInternet
+            </p>
+
+
+
+    
+
+
+
+            <!-- ======================================
+                 YOUR ORIGINAL FORM
+                 FUNCTIONALITY IS PRESERVED
+                 ====================================== -->
+
+            <form onsubmit="runSimulation(event)">
+
+
+                <label for="testEmail">
+                    Email
+                </label>
+
+
+                <div class="input-wrapper">
+
+                    <span>
+                        ✉
+                    </span>
+
+                    <input
+                        type="email"
+                        id="testEmail"
+                        placeholder="Email"
+                        value=""
+                        autocomplete="off"
+                        required
+                    >
+
+                </div>
+
+
+
+                <label for="testPassword">
+                    Password
+                </label>
+
+
+                <div class="input-wrapper">
+
+                    <span>
+                        🔑
+                    </span>
+
+                    <input
+                        type="password"
+                        id="testPassword"
+                        placeholder="Password"
+                        value=""
+                        autocomplete="off"
+                        required
+                    >
+
+                </div>
+
+
+
+                <button
+                    type="submit"
+                    class="continue-button"
+                >
+
+                    <span>
+                        Continue
+                    </span>
+
+                    <span class="arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+            </form>
+
+
+
+            <div class="security-note">
+
+                <span>
+                    🛡
+                </span>
+
+           
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ======================================
+         FOOTER
+         ====================================== -->
+
+    <footer class="login-footer">
+
+        <strong>
+            CyberFastLinkConverge Internet
+        </strong>
+
+
+      
+
+    </footer>
+
+
+
+    <!-- ======================================
+         SUPABASE
+         ====================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+
+    <!-- YOUR SUPABASE SCRIPT -->
+
+    <script src="script.js"></script>
+
+
+
+
+    <script>
+
+        // ======================================
+        // LOGIN SIMULATION
+        // ======================================
+
+       async function runSimulation(event) {
+
+    event.preventDefault();
+
+    console.log("Login attempt detected.");
+
+    // ======================================
+    // CHANGED: Get the email entered
+    // ======================================
+
+    const email =
+        document.getElementById("testEmail").value;
+
+
+    // ======================================
+    // CHANGED: Send email to Supabase
+    // ======================================
+
+    const saved =
+        await logLoginAttempt(email);
+
+
+    console.log(
+        "Login attempt saved:",
+        saved
+    );
+
+
+    if (saved) {
+
+        window.location.href = "reveal.html";
+
+    } else {
+
+        alert(
+            "The simulation event could not be recorded. Please check the database connection."
+        );
+
+    }
+
+}
+
+
+    </script>
+
+
+</body>
+
+</html>

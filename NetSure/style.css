@@ -1,0 +1,2787 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #07111f;
+    color: white;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 500px;
+    background: #101d30;
+    border-radius: 18px;
+    padding: 45px 35px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+}
+
+.icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.label {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #7db7ff;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 25px;
+    line-height: 1.3;
+    margin-bottom: 18px;
+}
+
+.message {
+    color: #c5cfdd;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #2477e8;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1b62c2;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #34445c;
+    border-radius: 10px;
+    background: #0a1627;
+    color: white;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2477e8;
+}
+
+input::placeholder {
+    color: #8290a5;
+}
+
+.small {
+    margin-top: 25px;
+    color: #718096;
+    font-size: 12px;
+}
+
+
+/* ==========================================
+   OFFER CARDS
+   ========================================== */
+
+.offer-card {
+    margin-top: 18px;
+    padding: 20px;
+    border-radius: 14px;
+    background: #0a1627;
+    border: 1px solid #34445c;
+    text-align: left;
+    transition: 0.2s ease;
+}
+
+.offer-card:hover {
+    border-color: #2477e8;
+    transform: translateY(-2px);
+}
+
+.offer-card h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.offer-card p {
+    color: #c5cfdd;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.offer-card strong {
+    display: block;
+    color: #7db7ff;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.offer-card button {
+    margin-top: 5px;
+}
+/* =====================================================
+   CYBERFASTLINK - ISP WEBSITE DESIGN
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f9fd;
+    color: #173b5e;
+}
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+.isp-header {
+    height: 78px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #ffffff;
+    border-bottom: 1px solid #e4edf5;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 3px 15px rgba(0, 74, 130, 0.08);
+}
+
+/* LOGO */
+
+.isp-logo {
+    cursor: pointer;
+}
+
+.isp-logo strong {
+    display: block;
+    color: #0068b7;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.isp-logo span {
+    display: block;
+    margin-top: 3px;
+
+    color: #71869a;
+    font-size: 8px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+/* NAVIGATION */
+
+.isp-header nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.isp-header nav a {
+    position: relative;
+
+    color: #38536b;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.25s;
+}
+
+.isp-header nav a::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+
+    width: 0;
+    height: 2px;
+
+    background: #0072bd;
+
+    transition: 0.25s;
+}
+
+.isp-header nav a:hover {
+    color: #0072bd;
+}
+
+.isp-header nav a:hover::after {
+    width: 100%;
+}
+
+/* LOGIN BUTTON */
+
+.login-button {
+    width: auto;
+
+    padding: 12px 24px;
+
+    border: none;
+    border-radius: 25px;
+
+    background: #0072bd;
+    color: white;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 6px 18px rgba(0, 114, 189, 0.25);
+
+    transition: 0.25s;
+}
+
+.login-button:hover {
+    background: #005a97;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 9px 22px rgba(0, 114, 189, 0.35);
+}
+
+
+/* =====================================================
+   HERO / PROMO
+   ===================================================== */
+
+.promo-banner {
+    min-height: 570px;
+
+    padding: 80px 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+
+    position: relative;
+    overflow: hidden;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            120deg,
+            #004f91,
+            #0077c8,
+            #56aee8
+        );
+}
+
+/* decorative circles */
+
+.promo-banner::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    right: -180px;
+    top: -200px;
+
+    border-radius: 50%;
+
+    border: 80px solid rgba(255,255,255,0.06);
+}
+
+.promo-banner::after {
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    left: -250px;
+    bottom: -250px;
+
+    border-radius: 50%;
+
+    border: 70px solid rgba(255,255,255,0.05);
+}
+
+/* HERO CONTENT */
+
+.promo-content {
+    max-width: 650px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.promo-small {
+    display: inline-block;
+
+    padding: 8px 15px;
+    margin-bottom: 20px;
+
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.08);
+
+    color: white;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.promo-content h1 {
+    margin-bottom: 22px;
+
+    color: white;
+
+    font-size: 58px;
+    line-height: 1.02;
+
+    font-weight: 800;
+
+    letter-spacing: -2px;
+}
+
+.promo-content > p:not(.promo-small) {
+    max-width: 520px;
+
+    margin-bottom: 32px;
+
+    color: rgba(255,255,255,0.9);
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* OFFER BUTTON */
+
+.offer-button {
+    width: auto;
+
+    padding: 15px 30px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: white;
+    color: #0068b7;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.18);
+
+    transition: 0.25s;
+}
+
+.offer-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+
+    background: #f1f9ff;
+}
+
+
+/* =====================================================
+   SPEED CIRCLE
+   ===================================================== */
+
+.promo-speed {
+    width: 310px;
+    height: 310px;
+
+    min-width: 310px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+    z-index: 2;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,255,255,0.20),
+            rgba(255,255,255,0.04)
+        );
+
+    border: 2px solid rgba(255,255,255,0.6);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.2),
+        inset 0 0 30px rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(8px);
+
+    animation: floating 4s ease-in-out infinite;
+}
+
+@keyframes floating {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.promo-speed span {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.promo-speed strong {
+    margin-top: 5px;
+
+    font-size: 90px;
+    line-height: 0.9;
+
+    font-weight: 800;
+}
+
+.promo-speed b {
+    font-size: 26px;
+}
+
+.promo-speed p {
+    margin-top: 12px;
+
+    color: rgba(255,255,255,0.85);
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   PLANS SECTION
+   ===================================================== */
+
+.plans-section {
+    padding: 90px 8%;
+
+    background: #ffffff;
+
+    text-align: center;
+}
+
+.section-label {
+    margin-bottom: 10px;
+
+    color: #0072bd;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.plans-section h2 {
+    margin-bottom: 50px;
+
+    color: #173b5e;
+
+    font-size: 34px;
+    font-weight: 700;
+}
+
+
+/* PLANS CONTAINER */
+
+.internet-plans {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+
+/* PLAN CARD */
+
+.internet-plan {
+    width: 33%;
+
+    min-height: 340px;
+
+    padding: 35px 30px;
+
+    position: relative;
+
+    background: white;
+
+    border: 1px solid #dce8f2;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 71, 120, 0.08);
+
+    transition: 0.3s;
+}
+
+.internet-plan:hover {
+    transform: translateY(-10px);
+
+    border-color: #8bc5e9;
+
+    box-shadow:
+        0 18px 40px rgba(0, 100, 170, 0.15);
+}
+
+
+/* FEATURED PLAN */
+
+.internet-plan.featured {
+    border: 2px solid #0072bd;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff,
+            #f3faff
+        );
+
+    transform: translateY(-10px);
+}
+
+.internet-plan.featured:hover {
+    transform: translateY(-17px);
+}
+
+
+/* POPULAR */
+
+.popular {
+    position: absolute;
+
+    top: -13px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    padding: 6px 15px;
+
+    border-radius: 20px;
+
+    background: #0072bd;
+    color: white;
+
+    font-size: 9px;
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+    box-shadow: 0 5px 15px rgba(0,114,189,0.25);
+}
+
+
+/* PLAN TEXT */
+
+.internet-plan h3 {
+    margin-top: 12px;
+
+    color: #173b5e;
+
+    font-size: 21px;
+}
+
+.plan-speed {
+    margin: 20px 0;
+
+    color: #0072bd;
+
+    font-size: 36px;
+
+    font-weight: 800;
+}
+
+.internet-plan p {
+    min-height: 65px;
+
+    color: #687d90;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* PLAN BUTTON */
+
+.internet-plan button {
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #0072bd;
+
+    color: white;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.internet-plan button:hover {
+    background: #005993;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   BENEFITS
+   ===================================================== */
+
+.benefits {
+    padding: 80px 8%;
+
+    background:
+        linear-gradient(
+            180deg,
+            #f3f8fc,
+            #eaf4fb
+        );
+
+    text-align: center;
+}
+
+.benefits h2 {
+    margin-bottom: 50px;
+
+    color: #173b5e;
+
+    font-size: 32px;
+}
+
+.benefit-list {
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.benefit-list > div {
+    width: 33%;
+
+    padding: 35px 25px;
+
+    background: rgba(255,255,255,0.75);
+
+    border: 1px solid #d9e8f2;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 25px rgba(0,70,120,0.06);
+
+    transition: 0.3s;
+}
+
+.benefit-list > div:hover {
+    transform: translateY(-7px);
+
+    background: white;
+
+    box-shadow:
+        0 15px 30px rgba(0,70,120,0.12);
+}
+
+.benefit-list span {
+    display: block;
+
+    margin-bottom: 15px;
+
+    font-size: 42px;
+}
+
+.benefit-list h3 {
+    margin-bottom: 10px;
+
+    color: #173b5e;
+
+    font-size: 19px;
+}
+
+.benefit-list p {
+    color: #687d90;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+    padding: 45px 20px;
+
+    background: #073456;
+
+    color: white;
+
+    text-align: center;
+}
+
+footer strong {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: white;
+
+    font-size: 21px;
+}
+
+footer p {
+    margin-bottom: 8px;
+
+    color: #b9d0e3;
+
+    font-size: 14px;
+}
+
+footer small {
+    color: #88a8c0;
+
+    font-size: 11px;
+}
+
+
+/* =====================================================
+   MOBILE / TABLET
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+    .isp-header {
+        padding: 0 4%;
+    }
+
+    .isp-header nav {
+        gap: 15px;
+    }
+
+    .promo-banner {
+        padding: 70px 6%;
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .promo-content {
+        max-width: 700px;
+    }
+
+    .promo-content > p:not(.promo-small) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .internet-plans {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .internet-plan {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .internet-plan.featured {
+        transform: none;
+    }
+
+    .benefit-list {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .benefit-list > div {
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    .isp-header {
+        height: auto;
+
+        padding: 15px 20px;
+    }
+
+    .isp-header nav {
+        display: none;
+    }
+
+    .isp-logo strong {
+        font-size: 20px;
+    }
+
+    .isp-logo span {
+        font-size: 7px;
+    }
+
+    .login-button {
+        padding: 10px 16px;
+
+        font-size: 12px;
+    }
+
+    .promo-banner {
+        padding: 60px 20px;
+    }
+
+    .promo-content h1 {
+        font-size: 38px;
+
+        letter-spacing: -1px;
+    }
+
+    .promo-content > p:not(.promo-small) {
+        font-size: 15px;
+    }
+
+    .promo-speed {
+        width: 230px;
+        height: 230px;
+
+        min-width: 230px;
+    }
+
+    .promo-speed strong {
+        font-size: 65px;
+    }
+
+    .plans-section {
+        padding: 65px 20px;
+    }
+
+    .plans-section h2 {
+        font-size: 27px;
+    }
+
+    .benefits {
+        padding: 60px 20px;
+    }
+
+    .benefits h2 {
+        font-size: 27px;
+    }
+}
+/* =====================================================
+   SIMULATION BAR
+   ===================================================== */
+
+.simulation-bar {
+    width: 100%;
+
+    padding: 9px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+
+    background: #eaf5fc;
+
+    border-bottom: 1px solid #d5e7f3;
+
+    color: #42657d;
+
+    font-size: 11px;
+
+    text-align: center;
+}
+
+.simulation-bar strong {
+    color: #0072bd;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   PROMOS
+   ===================================================== */
+
+.promos-section {
+    padding: 90px 8%;
+
+    background: #ffffff;
+
+    text-align: center;
+}
+
+.promos-section h2 {
+    margin-bottom: 45px;
+
+    color: #173b5e;
+
+    font-size: 34px;
+}
+
+.promo-cards {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.promo-card {
+    width: 33%;
+
+    padding: 35px 28px;
+
+    position: relative;
+
+    background: #f8fbfe;
+
+    border: 1px solid #dce8f2;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(0,70,120,0.07);
+
+    transition: 0.3s;
+}
+
+.promo-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 35px rgba(0,90,150,0.14);
+}
+
+.promo-card.featured-promo {
+    border: 2px solid #0072bd;
+
+    background: #f1f9ff;
+}
+
+.promo-icon {
+    margin-bottom: 15px;
+
+    font-size: 45px;
+}
+
+.promo-card h3 {
+    margin-bottom: 15px;
+
+    color: #173b5e;
+
+    font-size: 20px;
+}
+
+.promo-card p {
+    min-height: 75px;
+
+    margin-bottom: 20px;
+
+    color: #687d90;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+.promo-card button {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #0072bd;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.promo-card button:hover {
+    background: #005993;
+
+    transform: translateY(-2px);
+}
+
+.promo-badge {
+    position: absolute;
+
+    top: -12px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: #0072bd;
+
+    color: white;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   HELP & SUPPORT
+   ===================================================== */
+
+.support-section {
+    padding: 90px 8%;
+
+    background:
+        linear-gradient(
+            180deg,
+            #f3f8fc,
+            #e8f3fa
+        );
+
+    text-align: center;
+}
+
+.support-section h2 {
+    margin-bottom: 10px;
+
+    color: #173b5e;
+
+    font-size: 34px;
+}
+
+.support-intro {
+    margin-bottom: 45px;
+
+    color: #687d90;
+
+    font-size: 15px;
+}
+
+.support-cards {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.support-card {
+    width: 33%;
+
+    padding: 35px 25px;
+
+    background: white;
+
+    border: 1px solid #d9e8f2;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(0,70,120,0.07);
+
+    transition: 0.3s;
+}
+
+.support-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 15px 35px rgba(0,70,120,0.13);
+}
+
+.support-icon {
+    margin-bottom: 15px;
+
+    font-size: 42px;
+}
+
+.support-card h3 {
+    margin-bottom: 12px;
+
+    color: #173b5e;
+
+    font-size: 19px;
+}
+
+.support-card p {
+    min-height: 75px;
+
+    margin-bottom: 20px;
+
+    color: #687d90;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+.support-card button {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #0072bd;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.support-card button:hover {
+    background: #005993;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   SUPPORT INFORMATION
+   ===================================================== */
+
+.support-message {
+    display: none;
+
+    max-width: 650px;
+
+    margin: 40px auto 0;
+
+    padding: 30px;
+
+    background: white;
+
+    border: 2px solid #0072bd;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0,70,120,0.12);
+}
+
+.support-message h3 {
+    margin-bottom: 10px;
+
+    color: #173b5e;
+}
+
+.support-message p {
+    margin-bottom: 20px;
+
+    color: #687d90;
+
+    line-height: 1.6;
+}
+
+.support-message button {
+    width: auto;
+
+    padding: 10px 25px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #0072bd;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.support-message button:hover {
+    background: #005993;
+}
+
+
+/* =====================================================
+   SMOOTH NAVIGATION
+   ===================================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 800px) {
+
+    .simulation-bar {
+        flex-direction: column;
+
+        gap: 3px;
+    }
+
+    .promo-cards,
+    .support-cards {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .promo-card,
+    .support-card {
+        width: 100%;
+
+        max-width: 450px;
+    }
+}
+/* =====================================================
+   NETSURE / CYBERFASTLINK LOGIN PAGE
+   ===================================================== */
+
+.login-page {
+    min-height: 100vh;
+
+    margin: 0;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(0, 114, 189, 0.10),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #f4f9fd 0%,
+            #e7f3fa 100%
+        );
+
+    color: #173b5e;
+}
+
+
+/* =====================================================
+   LOGIN HEADER
+   ===================================================== */
+
+.login-header {
+    width: 100%;
+    height: 76px;
+
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #dce8f2;
+
+    box-shadow:
+        0 3px 15px rgba(0, 70, 120, 0.07);
+
+    box-sizing: border-box;
+}
+
+
+.login-logo {
+    line-height: 1;
+}
+
+
+.login-logo strong {
+    display: block;
+
+    color: #0066b3;
+
+    font-size: 24px;
+
+    font-weight: 800;
+}
+
+
+.login-logo span {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #718698;
+
+    font-size: 8px;
+
+    font-weight: bold;
+
+    letter-spacing: 2.5px;
+}
+
+
+.back-home-link {
+    padding: 9px 17px;
+
+    border: 1px solid #cfe1ec;
+
+    border-radius: 20px;
+
+    color: #0072bd;
+
+    background: #f7fbfd;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+
+.back-home-link:hover {
+    background: #0072bd;
+
+    color: white;
+
+    border-color: #0072bd;
+}
+
+
+/* =====================================================
+   MAIN LOGIN AREA
+   ===================================================== */
+
+.login-main {
+    width: 100%;
+
+    max-width: 1150px;
+
+    min-height: calc(100vh - 156px);
+
+    margin: auto;
+
+    padding: 70px 30px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 440px;
+
+    align-items: center;
+
+    gap: 70px;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   LEFT SIDE
+   ===================================================== */
+
+.login-intro {
+    padding: 15px;
+}
+
+
+.login-badge {
+    display: inline-block;
+
+    margin-bottom: 20px;
+
+    padding: 7px 14px;
+
+    border-radius: 20px;
+
+    background: #dff1fc;
+
+    color: #0072bd;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.login-intro h1 {
+    margin: 0 0 20px;
+
+    color: #173b5e;
+
+    font-size: 52px;
+
+    line-height: 1.05;
+
+    letter-spacing: -1.5px;
+}
+
+
+.login-intro > p {
+    max-width: 540px;
+
+    margin-bottom: 35px;
+
+    color: #60798c;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   LOGIN FEATURES
+   ===================================================== */
+
+.login-features {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+.login-feature {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+
+.feature-icon {
+    width: 45px;
+    height: 45px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 5px 15px rgba(0, 70, 120, 0.08);
+
+    font-size: 20px;
+}
+
+
+.login-feature strong {
+    display: block;
+
+    margin-bottom: 2px;
+
+    color: #244d69;
+
+    font-size: 14px;
+}
+
+
+.login-feature span {
+    color: #748a9a;
+
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   LOGIN CARD
+   ===================================================== */
+
+.login-card {
+    width: 100%;
+
+    padding: 38px 35px;
+
+    box-sizing: border-box;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    border: 1px solid #d5e5ef;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 70, 120, 0.14);
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   LOGIN ICON
+   ===================================================== */
+
+.login-card-icon {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 17px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background: #e7f5fd;
+
+    font-size: 30px;
+
+    box-shadow:
+        inset 0 0 0 1px #cde8f5;
+}
+
+
+/* =====================================================
+   CARD TEXT
+   ===================================================== */
+
+.login-card-label {
+    margin-bottom: 8px;
+
+    color: #0072bd;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.login-card h2 {
+    margin: 0 0 10px;
+
+    color: #173b5e;
+
+    font-size: 27px;
+}
+
+
+.login-card-description {
+    margin: 0 0 22px;
+
+    color: #718798;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   DEMO BOX
+   ===================================================== */
+
+.dummy-box {
+    margin-bottom: 22px;
+
+    padding: 13px;
+
+    border: 1px solid #cde6f3;
+
+    border-radius: 10px;
+
+    background: #eff9fd;
+
+    text-align: left;
+}
+
+
+.dummy-title {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #0072bd;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+}
+
+
+.dummy-text {
+    display: block;
+
+    color: #60798c;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   FORM LABELS
+   ===================================================== */
+
+.login-card form {
+    text-align: left;
+}
+
+
+.login-card label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #36536a;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   INPUT WRAPPER
+   ===================================================== */
+
+.input-wrapper {
+    width: 100%;
+
+    margin-bottom: 17px;
+
+    display: flex;
+
+    align-items: center;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d3e1eb;
+
+    border-radius: 9px;
+
+    background: #f9fcfe;
+
+    transition: 0.2s;
+}
+
+
+.input-wrapper > span {
+    width: 42px;
+
+    flex-shrink: 0;
+
+    color: #7892a4;
+
+    text-align: center;
+
+    font-size: 15px;
+}
+
+
+.input-wrapper input {
+    width: 100%;
+
+    margin: 0;
+
+    padding: 14px 12px 14px 0;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #173b5e;
+
+    font-size: 14px;
+
+    box-shadow: none;
+}
+
+
+.input-wrapper:focus-within {
+    border-color: #0072bd;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 3px rgba(0, 114, 189, 0.08);
+}
+
+
+.input-wrapper input:focus {
+    border: none;
+
+    box-shadow: none;
+
+    outline: none;
+}
+
+
+/* =====================================================
+   CONTINUE BUTTON
+   ===================================================== */
+
+.continue-button {
+    width: 100%;
+
+    margin-top: 4px;
+
+    padding: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0072bd,
+            #005993
+        );
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 20px rgba(0, 114, 189, 0.22);
+
+    transition: 0.25s;
+}
+
+
+.continue-button:hover {
+    transform: translateY(-2px);
+
+    background:
+        linear-gradient(
+            135deg,
+            #0081d3,
+            #00639f
+        );
+
+    box-shadow:
+        0 12px 25px rgba(0, 114, 189, 0.30);
+}
+
+
+.continue-button .arrow {
+    font-size: 18px;
+
+    transition: 0.25s;
+}
+
+
+.continue-button:hover .arrow {
+    transform: translateX(4px);
+}
+
+
+/* =====================================================
+   SECURITY NOTE
+   ===================================================== */
+
+.security-note {
+    margin-top: 20px;
+
+    padding-top: 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    border-top: 1px solid #edf2f5;
+}
+
+
+.security-note span {
+    font-size: 13px;
+}
+
+
+.security-note p {
+    margin: 0;
+
+    color: #8295a4;
+
+    font-size: 10px;
+
+    line-height: 1.4;
+}
+
+
+/* =====================================================
+   LOGIN FOOTER
+   ===================================================== */
+
+.login-footer {
+    padding: 28px 20px;
+
+    background: #073456;
+
+    color: #ffffff;
+
+    text-align: center;
+}
+
+
+.login-footer strong {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 17px;
+}
+
+
+.login-footer p {
+    margin-bottom: 5px;
+
+    color: #b9d0e3;
+
+    font-size: 12px;
+}
+
+
+.login-footer small {
+    color: #91acc1;
+
+    font-size: 10px;
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 850px) {
+
+    .login-main {
+        grid-template-columns: 1fr;
+
+        max-width: 600px;
+
+        gap: 35px;
+
+        padding-top: 50px;
+    }
+
+
+    .login-intro {
+        text-align: center;
+    }
+
+
+    .login-intro h1 {
+        font-size: 42px;
+    }
+
+
+    .login-intro > p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .login-features {
+        align-items: flex-start;
+
+        width: max-content;
+
+        max-width: 100%;
+
+        margin: auto;
+
+        text-align: left;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 550px) {
+
+    .login-header {
+        padding: 0 20px;
+    }
+
+
+    .login-logo strong {
+        font-size: 19px;
+    }
+
+
+    .login-logo span {
+        font-size: 6px;
+
+        letter-spacing: 1.5px;
+    }
+
+
+    .back-home-link {
+        padding: 8px 11px;
+
+        font-size: 10px;
+    }
+
+
+    .login-main {
+        padding: 40px 18px;
+    }
+
+
+    .login-intro h1 {
+        font-size: 34px;
+    }
+
+
+    .login-intro > p {
+        font-size: 15px;
+    }
+
+
+    .login-card {
+        padding: 30px 22px;
+    }
+
+}
+/* =====================================================
+   REVEAL / INTERNET OFFERS PAGE
+   ===================================================== */
+
+.reveal-page {
+    min-height: 100vh;
+
+    margin: 0;
+
+    background:
+        radial-gradient(
+            circle at 90% 10%,
+            rgba(0, 114, 189, 0.10),
+            transparent 30%
+        ),
+        linear-gradient(
+            180deg,
+            #f3f9fd 0%,
+            #ffffff 65%
+        );
+
+    color: #173b5e;
+}
+
+
+/* =====================================================
+   REVEAL HEADER
+   ===================================================== */
+
+.reveal-header {
+    width: 100%;
+    height: 76px;
+
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #dce8f2;
+
+    box-shadow:
+        0 3px 15px rgba(0, 70, 120, 0.07);
+}
+
+
+.reveal-logo {
+    line-height: 1;
+}
+
+
+.reveal-logo strong {
+    display: block;
+
+    color: #0066b3;
+
+    font-size: 24px;
+
+    font-weight: 800;
+}
+
+
+.reveal-logo span {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #718698;
+
+    font-size: 8px;
+
+    font-weight: bold;
+
+    letter-spacing: 2.5px;
+}
+
+
+.reveal-home {
+    padding: 9px 17px;
+
+    border: 1px solid #cfe1ec;
+
+    border-radius: 20px;
+
+    background: #f7fbfd;
+
+    color: #0072bd;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+
+.reveal-home:hover {
+    background: #0072bd;
+
+    border-color: #0072bd;
+
+    color: white;
+}
+
+
+/* =====================================================
+   MAIN REVEAL CONTAINER
+   ===================================================== */
+
+.reveal-container {
+    width: 100%;
+
+    max-width: 1150px;
+
+    margin: auto;
+
+    padding: 65px 25px 80px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   INTRO
+   ===================================================== */
+
+.reveal-intro {
+    max-width: 700px;
+
+    margin: auto;
+}
+
+
+.success-icon {
+    width: 68px;
+    height: 68px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e6f7ee;
+
+    border: 2px solid #acdcbf;
+
+    color: #218653;
+
+    font-size: 31px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 8px 20px rgba(30, 130, 80, 0.10);
+}
+
+
+.reveal-label {
+    margin-bottom: 10px;
+
+    color: #0072bd;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.reveal-intro h1 {
+    margin: 0 0 15px;
+
+    color: #173b5e;
+
+    font-size: 42px;
+
+    line-height: 1.1;
+}
+
+
+.reveal-description {
+    max-width: 620px;
+
+    margin: auto;
+
+    color: #6c8293;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   OFFER CARDS CONTAINER
+   ===================================================== */
+
+.reveal-offers {
+    width: 100%;
+
+    margin-top: 55px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    text-align: left;
+}
+
+
+/* =====================================================
+   OFFER CARD
+   ===================================================== */
+
+.reveal-offer-card {
+    min-height: 470px;
+
+    padding: 35px 28px;
+
+    position: relative;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background: #ffffff;
+
+    border: 1px solid #d8e7f1;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 70, 120, 0.08);
+
+    transition: 0.3s;
+}
+
+
+.reveal-offer-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 18px 40px rgba(0, 70, 120, 0.14);
+}
+
+
+/* =====================================================
+   FEATURED CARD
+   ===================================================== */
+
+.reveal-featured-card {
+    border: 2px solid #0072bd;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff,
+            #f0f9fe
+        );
+}
+
+
+.popular-offer {
+    position: absolute;
+
+    top: -13px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    padding: 6px 15px;
+
+    border-radius: 20px;
+
+    background: #0072bd;
+
+    color: white;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   OFFER ICON
+   ===================================================== */
+
+.reveal-offer-icon {
+    width: 55px;
+    height: 55px;
+
+    margin-bottom: 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background: #eaf6fd;
+
+    font-size: 26px;
+}
+
+
+/* =====================================================
+   OFFER TITLE
+   ===================================================== */
+
+.offer-label {
+    margin: 0 0 7px;
+
+    color: #0072bd;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+}
+
+
+.reveal-offer-card h2 {
+    margin: 0 0 14px;
+
+    color: #173b5e;
+
+    font-size: 23px;
+}
+
+
+/* =====================================================
+   SPEED
+   ===================================================== */
+
+.reveal-speed {
+    margin-bottom: 15px;
+
+    color: #0072bd;
+
+    font-size: 48px;
+
+    font-weight: 800;
+
+    line-height: 1;
+}
+
+
+.reveal-speed span {
+    font-size: 17px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   DESCRIPTION
+   ===================================================== */
+
+.reveal-offer-description {
+    min-height: 70px;
+
+    margin: 0;
+
+    color: #6b8192;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   FEATURES
+   ===================================================== */
+
+.offer-features {
+    margin: 18px 0 22px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+
+.offer-features div {
+    color: #526c7f;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   OFFER BUTTON
+   ===================================================== */
+
+.reveal-offer-card button {
+    width: 100%;
+
+    margin-top: auto;
+
+    padding: 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0072bd,
+            #005993
+        );
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+
+.reveal-offer-card button span {
+    font-size: 17px;
+
+    transition: 0.25s;
+}
+
+
+.reveal-offer-card button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 114, 189, 0.22);
+}
+
+
+.reveal-offer-card button:hover span {
+    transform: translateX(4px);
+}
+
+
+/* =====================================================
+   SIMULATION NOTICE
+   ===================================================== */
+
+.reveal-notice {
+    max-width: 800px;
+
+    margin: 40px auto 25px;
+
+    padding: 20px 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #cde4f0;
+
+    border-radius: 12px;
+
+    background: #edf8fd;
+
+    text-align: left;
+}
+
+
+.notice-icon {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: white;
+
+    font-size: 20px;
+}
+
+
+.reveal-notice strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #0072bd;
+
+    font-size: 12px;
+}
+
+
+.reveal-notice p {
+    margin: 0;
+
+    color: #647c8d;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   BACK BUTTON
+   ===================================================== */
+
+.reveal-back-button {
+    display: inline-block;
+
+    margin-top: 5px;
+
+    color: #0072bd;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+.reveal-back-button:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   REVEAL FOOTER
+   ===================================================== */
+
+.reveal-footer {
+    padding: 30px 20px;
+
+    background: #073456;
+
+    color: white;
+
+    text-align: center;
+}
+
+
+.reveal-footer strong {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 17px;
+}
+
+
+.reveal-footer p {
+    margin-bottom: 5px;
+
+    color: #b9d0e3;
+
+    font-size: 12px;
+}
+
+
+.reveal-footer small {
+    color: #91acc1;
+
+    font-size: 10px;
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+    .reveal-offers {
+        grid-template-columns: 1fr;
+
+        max-width: 480px;
+
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+    .reveal-offer-card {
+        min-height: auto;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 550px) {
+
+    .reveal-header {
+        padding: 0 20px;
+    }
+
+
+    .reveal-logo strong {
+        font-size: 19px;
+    }
+
+
+    .reveal-logo span {
+        font-size: 6px;
+
+        letter-spacing: 1.5px;
+    }
+
+
+    .reveal-home {
+        padding: 8px 11px;
+
+        font-size: 10px;
+    }
+
+
+    .reveal-container {
+        padding: 45px 18px 60px;
+    }
+
+
+    .reveal-intro h1 {
+        font-size: 31px;
+    }
+
+
+    .reveal-description {
+        font-size: 14px;
+    }
+
+
+    .reveal-offers {
+        margin-top: 45px;
+    }
+
+
+    .reveal-offer-card {
+        padding: 30px 23px;
+    }
+
+
+    .reveal-notice {
+        align-items: flex-start;
+
+        padding: 18px;
+    }
+
+}

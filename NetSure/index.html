@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CyberFastLink</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="isp-header">
+
+        <div class="isp-logo">
+
+            <strong>CyberFastLink</strong>
+
+            <span>CONVERGE INTERNET</span>
+
+        </div>
+
+
+        <nav>
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#fiber">
+                Fiber Internet
+            </a>
+
+            <a href="#promos">
+                Promos
+            </a>
+
+            <a href="#support">
+                Help & Support
+            </a>
+
+        </nav>
+
+
+        <button
+            class="login-button"
+            onclick="goToLogin()"
+        >
+            My Account
+        </button>
+
+    </header>
+
+
+
+
+
+
+    <!-- =====================================================
+         HOME / HERO
+         ===================================================== -->
+
+    <section
+        class="promo-banner"
+        id="home"
+    >
+
+        <div class="promo-content">
+
+            <p class="promo-small">
+                LIMITED-TIME ONLINE OFFER
+            </p>
+
+
+            <h1>
+
+                GET CONNECTED.
+                <br>
+                STAY CONNECTED.
+
+            </h1>
+
+
+            <p>
+
+                Experience fast and reliable fiber internet
+                designed for your home.
+
+            </p>
+
+
+            <button
+                class="offer-button"
+                onclick="goToLogin()"
+            >
+
+                CHECK MY OFFER
+
+            </button>
+
+        </div>
+
+
+
+        <!-- SPEED CIRCLE -->
+
+        <div class="promo-speed">
+
+            <span>
+                UP TO
+            </span>
+
+
+            <strong>
+                500
+            </strong>
+
+
+            <b>
+                Mbps
+            </b>
+
+
+            <p>
+                High-speed fiber internet
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FIBER INTERNET
+         ===================================================== -->
+
+    <section
+        class="plans-section"
+        id="fiber"
+    >
+
+        <p class="section-label">
+            FIBER INTERNET PLANS
+        </p>
+
+
+        <h2>
+            Choose the connection for your home
+        </h2>
+
+
+
+        <div class="internet-plans">
+
+
+            <!-- STARTER -->
+
+            <div class="internet-plan">
+
+                <h3>
+                    Fiber Starter
+                </h3>
+
+
+                <div class="plan-speed">
+                    100 Mbps
+                </div>
+
+
+                <p>
+
+                    Reliable internet for browsing,
+                    studying and everyday use.
+
+                </p>
+
+
+                <button
+                    onclick="goToLogin()"
+                >
+
+                    View Offer
+
+                </button>
+
+            </div>
+
+
+
+            <!-- PLUS -->
+
+            <div class="internet-plan featured">
+
+                <div class="popular">
+                    POPULAR
+                </div>
+
+
+                <h3>
+                    Fiber Plus
+                </h3>
+
+
+                <div class="plan-speed">
+                    200 Mbps
+                </div>
+
+
+                <p>
+
+                    More speed for streaming,
+                    gaming and multiple devices.
+
+                </p>
+
+
+                <button
+                    onclick="goToLogin()"
+                >
+
+                    View Offer
+
+                </button>
+
+            </div>
+
+
+
+            <!-- PREMIUM -->
+
+            <div class="internet-plan">
+
+                <h3>
+                    Fiber Premium
+                </h3>
+
+
+                <div class="plan-speed">
+                    500 Mbps
+                </div>
+
+
+                <p>
+
+                    High-speed connectivity for
+                    connected households.
+
+                </p>
+
+
+                <button
+                    onclick="goToLogin()"
+                >
+
+                    View Offer
+
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PROMOS
+         ===================================================== -->
+
+    <section
+        class="promos-section"
+        id="promos"
+    >
+
+        <p class="section-label">
+            CURRENT PROMOTIONS
+        </p>
+
+
+        <h2>
+            Special Internet Offers
+        </h2>
+
+
+        <div class="promo-cards">
+
+
+            <!-- PROMO 1 -->
+
+            <div class="promo-card">
+
+                <div class="promo-icon">
+                    🚀
+                </div>
+
+
+                <h3>
+                    Fiber Starter Promo
+                </h3>
+
+
+                <p>
+
+                    Get reliable 100 Mbps fiber internet
+                    for everyday browsing, studying
+                    and online activities.
+
+                </p>
+
+
+                <button
+                    onclick="goToLogin()"
+                >
+
+                    Check Offer
+
+                </button>
+
+            </div>
+
+
+
+            <!-- PROMO 2 -->
+
+            <div class="promo-card featured-promo">
+
+                <span class="promo-badge">
+                    SPECIAL OFFER
+                </span>
+
+
+                <div class="promo-icon">
+                    ⚡
+                </div>
+
+
+                <h3>
+                    Fiber Plus Promo
+                </h3>
+
+
+                <p>
+
+                    Enjoy 200 Mbps connectivity
+                    for streaming, gaming and
+                    multiple connected devices.
+
+                </p>
+
+
+                <button
+                    onclick="goToLogin()"
+                >
+
+                    Check Offer
+
+                </button>
+
+            </div>
+
+
+
+            <!-- PROMO 3 -->
+
+            <div class="promo-card">
+
+                <div class="promo-icon">
+                    🔥
+                </div>
+
+
+                <h3>
+                    Fiber Premium Promo
+                </h3>
+
+
+                <p>
+
+                    Experience high-speed 500 Mbps
+                    connectivity for connected
+                    households.
+
+                </p>
+
+
+                <button
+                    onclick="goToLogin()"
+                >
+
+                    Check Offer
+
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         WHY CHOOSE
+         ===================================================== -->
+
+    <section class="benefits">
+
+        <h2>
+            Your Home. Your Connection.
+        </h2>
+
+
+        <div class="benefit-list">
+
+
+            <div>
+
+                <span>
+                    ⚡
+                </span>
+
+                <h3>
+                    Fast Fiber
+                </h3>
+
+                <p>
+                    Enjoy high-speed connectivity.
+                </p>
+
+            </div>
+
+
+
+            <div>
+
+                <span>
+                    📶
+                </span>
+
+                <h3>
+                    Reliable Connection
+                </h3>
+
+                <p>
+                    Stay connected across your home.
+                </p>
+
+            </div>
+
+
+
+            <div>
+
+                <span>
+                    🏠
+                </span>
+
+                <h3>
+                    For Every Home
+                </h3>
+
+                <p>
+                    Plans for different household needs.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         HELP & SUPPORT
+         ===================================================== -->
+
+    <section
+        class="support-section"
+        id="support"
+    >
+
+        <p class="section-label">
+            HELP & SUPPORT
+        </p>
+
+
+        <h2>
+            How can we help?
+        </h2>
+
+
+        <p class="support-intro">
+
+            Find information about common internet
+            concerns and account assistance.
+
+        </p>
+
+
+
+        <div class="support-cards">
+
+
+            <!-- CONNECTION -->
+
+            <div class="support-card">
+
+                <div class="support-icon">
+                    📶
+                </div>
+
+
+                <h3>
+                    Internet Connection
+                </h3>
+
+
+                <p>
+
+                    Having problems with your internet
+                    connection? Check your router
+                    and network connection.
+
+                </p>
+
+
+                <button
+                    onclick="showSupport('connection')"
+                >
+
+                    Learn More
+
+                </button>
+
+            </div>
+
+
+
+            <!-- BILLING -->
+
+            <div class="support-card">
+
+                <div class="support-icon">
+                    💳
+                </div>
+
+
+                <h3>
+                    Billing & Payment
+                </h3>
+
+
+                <p>
+
+                    Need help understanding your
+                    account or payment information?
+
+                </p>
+
+
+                <button
+                    onclick="showSupport('billing')"
+                >
+
+                    Learn More
+
+                </button>
+
+            </div>
+
+
+
+            <!-- CONTACT -->
+
+            <div class="support-card">
+
+                <div class="support-icon">
+                    💬
+                </div>
+
+
+                <h3>
+                    Contact Support
+                </h3>
+
+
+                <p>
+
+                    Need additional assistance?
+                    Get information about contacting
+                    support.
+
+                </p>
+
+
+                <button
+                    onclick="showSupport('contact')"
+                >
+
+                    Contact Us
+
+                </button>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             SUPPORT INFORMATION BOX
+             ================================================= -->
+
+        <div
+            id="supportMessage"
+            class="support-message"
+        >
+
+            <h3>
+                Support Information
+            </h3>
+
+
+            <p id="supportText">
+                Select a support option above.
+            </p>
+
+
+            <button
+                onclick="closeSupport()"
+            >
+
+                Close
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer>
+
+        <strong>
+            CyberFastLinkConverge Internet
+        </strong>
+
+
+        <p>
+            Cybersecurity Awareness Simulation
+        </p>
+
+
+        <small>
+
+            Fictional educational website —
+            not affiliated with Converge ICT.
+
+        </small>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         SUPABASE
+         ===================================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+
+    <!-- YOUR SCRIPT -->
+
+    <script src="script.js"></script>
+
+
+
+    <!-- =====================================================
+         PAGE FUNCTIONS
+         ===================================================== -->
+
+    <script>
+
+        /*
+         * HELP & SUPPORT
+         */
+
+        function showSupport(type) {
+
+            const message =
+                document.getElementById("supportMessage");
+
+            const text =
+                document.getElementById("supportText");
+
+
+            if (type === "connection") {
+
+                text.textContent =
+                    "For connection problems, check that your router is powered on and that the network cables are properly connected. If the problem continues, contact the appropriate support service.";
+
+            }
+
+
+            else if (type === "billing") {
+
+                text.textContent =
+                    "For billing concerns, review your account and payment information. This educational simulation does not process real payments.";
+
+            }
+
+
+            else if (type === "contact") {
+
+                text.textContent =
+                    "This is a cybersecurity awareness simulation. The support option demonstrates how a website can provide customer assistance. No real customer support service is connected.";
+
+            }
+
+
+            message.style.display = "block";
+
+
+            message.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+
+        }
+
+
+
+        /*
+         * CLOSE SUPPORT INFORMATION
+         */
+
+        function closeSupport() {
+
+            const message =
+                document.getElementById("supportMessage");
+
+            message.style.display = "none";
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
